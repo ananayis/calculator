@@ -189,6 +189,7 @@ class MainActivity : AppCompatActivity() {
                 while (true) {
                     if (eat('*'.toInt())) x *= parseFactor() // multiplication
                     else if (eat('/'.toInt())) x /= parseFactor() // division
+                    else if (eat('%'.toInt())) x %= parseFactor()
                     else return x
                 }
             }
