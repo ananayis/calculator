@@ -30,39 +30,39 @@ class MainActivity : AppCompatActivity() {
             equation += "1"
         }
 
-        binding.button2.setOnClickListener(){
+        binding.button2.setOnClickListener {
             equation += "2"
         }
 
-        binding.button3.setOnClickListener(){
+        binding.button3.setOnClickListener {
             equation += "3"
         }
 
-        binding.button4.setOnClickListener() {
+        binding.button4.setOnClickListener {
             equation += "4"
         }
 
-        binding.button5.setOnClickListener(){
+        binding.button5.setOnClickListener {
             equation += "5"
         }
 
-        binding.button6.setOnClickListener(){
+        binding.button6.setOnClickListener {
             equation += "6"
         }
 
-        binding.button7.setOnClickListener(){
+        binding.button7.setOnClickListener {
             equation += "7"
         }
 
-        binding.button8.setOnClickListener(){
+        binding.button8.setOnClickListener {
             equation += "8"
         }
 
-        binding.button9.setOnClickListener(){
+        binding.button9.setOnClickListener {
             equation += "9"
         }
 
-        binding.button0.setOnClickListener(){
+        binding.button0.setOnClickListener {
             equation += "0"
         }
 
@@ -79,19 +79,19 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        binding.buttonMultiplication.setOnClickListener(){
+        binding.buttonMultiplication.setOnClickListener {
             if (equation.isNotEmpty() && !isLastOperator()){
                 equation += "*"
             }
         }
 
-        binding.buttonMinus.setOnClickListener(){
+        binding.buttonMinus.setOnClickListener {
             if (equation.isNotEmpty() && !isLastOperator()){
                 equation += "-"
             }
         }
 
-        binding.buttonSum.setOnClickListener(){
+        binding.buttonSum.setOnClickListener {
             if (equation.isNotEmpty() && !isLastOperator()){
                 equation += "+"
             }
@@ -114,22 +114,18 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        binding.buttonClear.setOnClickListener(){
+        binding.buttonClear.setOnClickListener {
             equation = ""
         }
 
-        binding.buttonBackSpace.setOnClickListener(){
+        binding.buttonBackSpace.setOnClickListener {
             equation = equation.dropLast(1)
-//            if (textAnswer.length() > 0) {
-//                textAnswer.text = textAnswer.text.substring(0..textAnswer.length() - 2)
-//            }
         }
 
-        binding.buttonPercent.setOnClickListener(){
+        binding.buttonPercent.setOnClickListener {
             if (equation.isNotEmpty() && !isLastOperator()){
                 equation += "%"
             }
-
         }
     }
 
